@@ -22,6 +22,9 @@ class RoomsController < ApplicationController
       render :new
     end
   end
+  def show
+    @room_message = RoomMessage.new room: @room
+  end
 
   def edit
   end
