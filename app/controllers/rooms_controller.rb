@@ -5,7 +5,6 @@ class RoomsController < ApplicationController
   before_action :load_entities
 
   def index
-    @rooms = Room.all
   end
 
   def new
